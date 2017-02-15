@@ -1,6 +1,6 @@
 {
   "name": "invincible",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A series of miscellaneous functional JavaScript utility library.",
   "scripts": {
     "build": "npm run build:es && npm run build:umd && npm run build:umd:min",
