@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "description": "A series of miscellaneous functional JavaScript utility library.",
   "scripts": {
-    "build": "babel ./src --out-dir ./lib ",
+    "build": "npm run build:es && npm run build:umd",
+    "build:es": "babel ./src --out-dir ./lib",
+    "build:umd": "webpack --config ./build/webpack.config.js --progress",
+    "test": "mocha --compilers js:babel-register",
+    "test:watch": "npm run test -- --watch",
+    "clean": "rimraf ./dist ./lib",
     "lint": "eslint . --ext .js",
-    "test": "mocha --compilers js:babel-register"
+    "prepublish": "npm run clean && npm run build && npm run lint && npm run test"
   },
-  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.13.2",
     "babel-eslint": "^7.1.1",
@@ -21,8 +25,12 @@
     "eslint": "^3.15.0",
     "mocha": "^3.2.0",
     "rimraf": "^2.5.4",
-    "webpack": "^2.2.1"
+    "webpack": "^1.13.1"
   },
+  "main": "lib/index.js",
+  "file": [
+    "lib"
+  ],
   "author": "Chikara Chan",
   "homepage": "https://github.com/chikara-chan/invincible",
   "repository": {
