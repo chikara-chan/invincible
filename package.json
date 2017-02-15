@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "description": "A series of miscellaneous functional JavaScript utility library.",
   "scripts": {
-    "build": "npm run build:es && npm run build:umd",
+    "build": "npm run build:es && npm run build:umd && npm run build:umd:min",
     "build:es": "babel ./src --out-dir ./lib",
     "build:umd": "webpack --config ./build/webpack.config.js --progress",
-    "test": "mocha --compilers js:babel-register",
+    "build:umd:min": "cross-env NODE_ENV=production npm run build:umd",
+    "test": "mocha --compilers js:babel-register --recursive",
+    "test:cov": "istanbul cover ./node_modules/mocha/bin/_mocha -- --compilers js:babel-register --recursive",
     "test:watch": "npm run test -- --watch",
-    "clean": "rimraf ./dist ./lib",
+    "clean": "npm run clean:lib && npm run clean:dist",
+    "clean:lib": "rimraf ./lib",
+    "clean:dist": "rimraf ./dist",
     "lint": "eslint . --ext .js",
+    "lint:fix": "npm run lint -- --fix",
     "prepublish": "npm run clean && npm run build && npm run lint && npm run test"
   },
   "devDependencies": {
@@ -22,7 +27,9 @@
     "babel-register": "^6.23.0",
     "chai": "^3.5.0",
     "coveralls": "^2.11.16",
+    "cross-env": "^3.1.4",
     "eslint": "^3.15.0",
+    "istanbul": "1.1.0-alpha.1",
     "mocha": "^3.2.0",
     "rimraf": "^2.5.4",
     "webpack": "^1.13.1"
