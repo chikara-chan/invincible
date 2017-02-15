@@ -10,9 +10,10 @@
     "test": "mocha --compilers js:babel-register --recursive",
     "test:cov": "istanbul cover ./node_modules/mocha/bin/_mocha -- --compilers js:babel-register --recursive",
     "test:watch": "npm run test -- --watch",
-    "clean": "npm run clean:lib && npm run clean:dist",
+    "clean": "npm run clean:lib && npm run clean:dist && npm run clean:cov",
     "clean:lib": "rimraf ./lib",
     "clean:dist": "rimraf ./dist",
+    "clean:cov": "rimraf ./coverage",
     "lint": "eslint . --ext .js",
     "lint:fix": "npm run lint -- --fix",
     "prepublish": "npm run clean && npm run build && npm run lint && npm run test"
