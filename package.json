@@ -37,7 +37,7 @@
     "webpack": "^1.13.1"
   },
   "main": "lib/index.js",
-  "file": [
+  "files": [
     "lib"
   ],
   "author": "Chikara Chan",
