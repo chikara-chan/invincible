@@ -9,6 +9,8 @@ script:
   - npm run test
   - npm run clean
   - npm run build
+after_script:
+  - coveralls < ./coverage/lcov.info
 branches:
   only:
     - master
