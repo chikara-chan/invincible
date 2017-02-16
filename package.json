@@ -37,9 +37,7 @@
     "webpack": "^1.13.1"
   },
   "main": "lib/index.js",
-  "files": [
-    "lib"
-  ],
+  "files": ["dist", "lib"],
   "author": "Chikara Chan",
   "homepage": "https://github.com/chikara-chan/invincible",
   "repository": {
