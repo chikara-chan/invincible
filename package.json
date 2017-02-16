@@ -2,6 +2,14 @@
   "name": "invincible",
   "version": "1.0.2",
   "description": "A series of miscellaneous functional JavaScript utility library.",
+  "keywords": [
+    "utility"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "dist",
+    "lib"
+  ],
   "scripts": {
     "build": "npm run build:es && npm run build:umd && npm run build:umd:min",
     "build:es": "babel ./src --out-dir ./lib",
@@ -31,13 +39,12 @@
     "coveralls": "^2.11.16",
     "cross-env": "^3.1.4",
     "eslint": "^3.15.0",
+    "eslint-config-invincible": "^1.0.0",
     "istanbul": "1.1.0-alpha.1",
     "mocha": "^3.2.0",
     "rimraf": "^2.5.4",
     "webpack": "^1.13.1"
   },
-  "main": "lib/index.js",
-  "files": ["dist", "lib"],
   "author": "Chikara Chan",
   "homepage": "https://github.com/chikara-chan/invincible",
   "repository": {
