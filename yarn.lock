@@ -1275,6 +1275,10 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
+eslint-config-invincible:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-invincible/-/eslint-config-invincible-1.0.0.tgz#b4d8e86d12fc6ffcd1532c736db73a0ebfdda8ae"
+
 eslint@^3.15.0:
   version "3.15.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-3.15.0.tgz#bdcc6a6c5ffe08160e7b93c066695362a91e30f2"
