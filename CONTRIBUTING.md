@@ -8,7 +8,6 @@ If you find a bug in the source code or a mistake in the documentation, you can 
 submitting an issue to our [GitHub Repository](https://github.com/chikara-chan/invincible/issues/new). Even better you can submit a Pull Request
 with a fix.
 
-
 ## Pull Request
 
 After getting some feedback, push to your fork and submit a pull request. We
