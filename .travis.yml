@@ -10,7 +10,7 @@ script:
   - npm run lint
   - npm run test:cov
 after_script:
-  - coveralls < ./coverage/lcov.info
+  - npm run coveralls
 branches:
   only:
     - master
