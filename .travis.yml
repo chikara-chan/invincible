@@ -11,10 +11,10 @@ script:
   - npm run test:cover
 after_script:
   - npm run test:report
+  - npm run docs:deploy
 branches:
   only:
     - master
-    - dev
 cache:
   directories:
     - node_modules
