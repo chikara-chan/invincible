@@ -1,5 +1,6 @@
 ---
 title: invariant
+layout: post
 ---
 
 ## Description

@@ -1,5 +1,6 @@
 ---
 title: Overview
+layout: post
 ---
 
 Invincible is a collection of miscellaneous functional JavaScript utility library. It is aim at helping developer to code easily and better.
