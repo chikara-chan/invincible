@@ -13,6 +13,7 @@ A series of miscellaneous functional JavaScript utility library.
 $ npm install --save invincible
 # Or
 $ yarn add invincible
+```
 
 ## Usage
 
