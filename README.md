@@ -38,4 +38,4 @@ invincible.invariant(true, 'something wrong')  // Noop
 
 ## License
 
-Released under the [MIT](https://github.com/chikara-chan/invincible/blob/dev/LICENSE) license.
+Released under the [MIT](https://github.com/chikara-chan/invincible/blob/master/LICENSE) license.
