@@ -1,0 +1,9 @@
+menu:
+  home: Home
+  api: API
+  changelog: Change Log
+
+cat:
+  overview: Overview
+  invariant: invariant
+  todo: todo

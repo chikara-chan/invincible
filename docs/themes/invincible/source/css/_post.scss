@@ -1,0 +1,21 @@
+.wrapper {
+  .wrapper-sidebar {
+    @import '_partial/sidebar';
+    @include border(right);
+    overflow: hidden;
+  }
+  .page-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  @media (max-width: 575px) {
+    .wrapper-sidebar {
+      margin-top: -30px;
+      padding-bottom: 10px;
+      @include border(bottom);
+    }
+    .wrapper-page {
+      padding-top: 30px;
+    }
+  }
+}

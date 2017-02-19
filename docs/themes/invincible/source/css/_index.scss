@@ -1,0 +1,33 @@
+.section-main {
+  padding-top: 80px;
+  text-align: center;
+  .h1 {
+    margin-bottom: 50px;
+    font-size: 60px;
+    font-weight: 200;
+  }
+  .h2 {
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 200;
+    color: $colorLight;
+  }
+  .btn-group {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    .btn {
+      @include reset-link();
+      @include reset-button();
+      display: inline-block;
+      padding: 10px 30px;
+      border-radius: 20px;
+      &.btn-primary {
+        @include reset-button($primary);
+        border-radius: 20px;
+      }
+      & + .btn {
+        margin-left: 50px;
+      }
+    }
+  }
+}

@@ -9,25 +9,32 @@ A series of miscellaneous functional JavaScript utility library.
 
 ## Install
 
-```sh
+``` bash
 $ npm install --save invincible
-```
+# Or
+$ yarn add invincible
 
 ## Usage
 
-```js
+``` js
+var invincible = require('invincible')
+// Or
 import invincible from 'invincible'
+// Or
+import {subModule, ...others} from 'invincible'
+// Or
+import subModule from 'invincible/lib/subModule'
 ```
 
 ## API
 
 #### invariant
 
-```js
+``` js
 invincible.invariant(false, 'something wrong') // Throw new Error('something wrong')
 invincible.invariant(true, 'something wrong')  // Noop
 ```
 
 ## License
 
-[MIT](https://github.com/chikara-chan/invincible/blob/master/LICENSE)
+Released under the [MIT](https://github.com/chikara-chan/invincible/blob/dev/LICENSE) license.

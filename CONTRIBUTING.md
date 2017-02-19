@@ -5,20 +5,20 @@ If you have found an issue or would like to request a new feature, simply create
 ## Issue
 
 If you find a bug in the source code or a mistake in the documentation, you can help us by
-submitting an issue to our [GitHub Repository](https://github.com/chikara-chan/invincible/issues/new). Even better you can submit a Pull Request
+submitting an issue to our [issues](https://github.com/chikara-chan/invincible/issues/new) page. Even better you can submit a Pull Request
 with a fix.
 
 ## Pull Request
 
-After getting some feedback, push to your fork and submit a pull request. We
+After getting some feedback, push to your fork and submit a [pull request](https://github.com/chikara-chan/invincible/compare). We
 may suggest some changes or improvements or alternatives, but for small changes
 your pull request should be accepted quickly.
 
-## Setup
+## Local Setup
 
 ```sh
-git clone https://github.com/chikara-chan/invincible.git
-cd invincible
-npm install -g yarn
-yarn install
+$ git clone https://github.com/chikara-chan/invincible.git
+$ cd invincible
+$ npm install -g yarn
+$ yarn install
 ```

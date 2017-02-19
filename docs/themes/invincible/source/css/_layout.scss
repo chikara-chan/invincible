@@ -1,0 +1,13 @@
+.root {
+  padding-top: 60px;
+  @import '_partial/header';
+
+  .main {
+    min-height: calc(100vh - 120px);
+    padding: 40px 0;
+    @import 'index';
+    @import 'post';
+  }
+
+  @import '_partial/footer';
+}
