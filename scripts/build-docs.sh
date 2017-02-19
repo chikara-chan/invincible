@@ -16,6 +16,7 @@ for i in $@; do
 done
 
 rimraf public db.json
+$ROOT_DIR/scripts/copy-docs.sh
 
 if [ $WATCH_MODE ]; then
   hexo generate
