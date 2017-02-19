@@ -1,0 +1,17 @@
+.footer {
+  @include border(top);
+  background: $bg;
+  height: 60px;
+  overflow: hidden;
+  line-height: 60px;
+
+  .col-right {
+    text-align: right;
+  }
+
+  .img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+}

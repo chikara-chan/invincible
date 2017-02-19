@@ -1,0 +1,23 @@
+.sidebar {
+  .item-list {
+    padding: 15px 0;
+    @include reset-list();
+    .item {
+      .link {
+        @include reset-link();
+        font-size: $size-lg;
+      }
+      .img {
+        width: 20px;
+        height: 20px;
+      }
+      &.github {
+        line-height: 70px;
+      }
+      & + .item {
+        margin-top: 15px;
+      }
+    }
+  }
+
+}

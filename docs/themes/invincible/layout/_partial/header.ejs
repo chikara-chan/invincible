@@ -1,0 +1,31 @@
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <a href="/" class="logo"><%= config.title %></a>
+      </div>
+      <div class="col-md-8">
+        <a href="javascript:void(0)" class="menu">
+          <label class="label" for="checkbox">
+          </label>
+        </a>
+        <input id ="checkbox" type="checkbox" class="checkbox"/>
+        <ul class="item-group clearfix">
+          <li class="item">
+            <a class="link" href="/"><%= __('menu.home') %></a>
+          </li>
+          <li class="item">
+            <a class="link" href="/api"><%= __('menu.api') %></a>
+          </li>
+          <li class="item">
+            <a class="link" href="/CHANGELOG.html"><%= __('menu.changelog') %></a>
+          </li>
+          <li class="item github">
+            <iframe src="https://ghbtns.com/github-btn.html?user=chikara-chan&repo=invincible&type=star&count=true" frameborder="0" scrolling="0" width="150px" height="20px"></iframe>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+

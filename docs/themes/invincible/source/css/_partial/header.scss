@@ -1,0 +1,124 @@
+.header {
+  @include fixed(0 0 auto 0 1);
+  @include border(bottom);
+  background: $bg;
+  height: 60px;
+  line-height: 60px;
+  .logo {
+    @include reset-link();
+    position: relative;
+    font-size: 24px;
+    &::after {
+      @include absolute(0 auto 0 0);
+      content: '';
+      display: block;
+      background: $bg;
+      width: 3px;
+      transform: rotate(30deg);
+      animation: animate 3s infinite;
+
+      @keyframes animate {
+        0% {
+          left: -10px;
+        }
+        33% {
+          left: -10px;
+        }
+        66% {
+          left: 110%;
+        }
+        100% {
+          left: 110%;
+        }
+      }
+    }
+  }
+  .menu {
+    @include reset-link();
+    display: none;
+    &:hover {
+      color: $color;
+    }
+
+    .label {
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 0;
+      width: 20px;
+      height: 17px;
+      overflow: hidden;
+
+      &::after {
+        @include absolute(0 0 auto 0);
+        content: '';
+        display: block;
+        background: $color;
+        height: 2px;
+        box-shadow: 0 5px, 0 10px, 0 15px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      @include absolute(-45px 15px auto auto);
+      line-height: $size;
+      padding: 5px 5px;
+      display: block;
+    }
+  }
+  .checkbox {
+    display: none;
+
+    &:checked {
+      & + .item-group {
+        display: block;
+      }
+    }
+  }
+
+  .item-group {
+    @include reset-list();
+    float: right;
+    .item {
+      float: left;
+      margin-right: 20px;
+      .link {
+        @include reset-link();
+        display: block;
+        padding: 0 15px;
+        font-size: $size-lg;
+      }
+      .img {
+        width: 20px;
+        height: 20px;
+      }
+      &.github {
+        line-height: 70px;
+        max-width: 80px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      @include absolute(-3px 0 auto auto);
+      @include border(right bottom left);
+      display: none;
+      background: #fff;
+
+      .item {
+        float: none;
+        margin-right: 0;
+        padding: 0 10px;
+
+        &+.item {
+          @include border(top)
+        }
+
+        &:hover {
+          background: $bg;
+        }
+        &.github {
+          display: none;
+        }
+      }
+    }
+  }
+}

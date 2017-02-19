@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2 wrapper-sidebar">
+        <%- partial('_partial/sidebar') %>
+      </div>
+      <div class="col-sm-9 offset-sm-1 wrapper-page">
+        <h1 class="page-title">
+          <%= page.title %>
+        </h1>
+        <article class="markdown-body">
+          <%- page.content %>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
