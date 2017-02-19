@@ -15,7 +15,6 @@
     "build:es": "babel ./src --out-dir ./lib",
     "build:umd": "webpack --config ./build/webpack.config.js --progress",
     "build:umd:min": "cross-env NODE_ENV=production npm run build:umd",
-    "build:docs": "./scripts/build-docs.sh",
     "test": "mocha --compilers js:babel-register --recursive",
     "test:watch": "npm run test -- --watch",
     "test:cover": "istanbul cover ./node_modules/mocha/bin/_mocha -- --compilers js:babel-register --recursive",
@@ -23,9 +22,13 @@
     "clean": "npm run clean:lib && npm run clean:dist && npm run clean:cov",
     "clean:lib": "rimraf ./lib",
     "clean:dist": "rimraf ./dist",
-    "clean:cov": "rimraf ./coverage",
+    "clean:cover": "rimraf ./coverage",
     "lint": "eslint . --ext .js",
     "lint:fix": "npm run lint -- --fix",
+    "docs": "./scripts/build-docs.sh",
+    "docs:watch": "./scripts/build-docs.sh --watch",
+    "docs:serve": "./scripts/serve-docs.sh",
+    "docs:deploy": "./scripts/deploy-docs.sh",
     "prepublish": "npm run clean && npm run build && npm run lint && npm run test"
   },
   "devDependencies": {
