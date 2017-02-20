@@ -2,8 +2,8 @@
  * Use invariant function to assert expression assumes to be true.
  * Pay attention, The invariant message will be stripped in production.
  *
- * @param  {boolean} condition
- * @param  {string} message
+ * @param {boolean} condition
+ * @param {string} message
  */
 const NODE_ENV = process.env.NODE_ENV
 let invariant = function() {}
