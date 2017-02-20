@@ -29,11 +29,25 @@ import subModule from 'invincible/lib/subModule'
 
 ## API
 
-#### invariant
+This library documents is published at [GitHub Pages](https://chikara-chan.github.io/invincible). Go to the site to see more details.
+
+## Third Support
+
+Support [babel-plugin-import](https://github.com/ant-design/babel-plugin-import) for loading modules on demand.
+
+``` json
+// .babelrc
+{
+  "plugins": [
+    ["import", {
+      "libraryName": "invincible"
+    }]
+  }
+}
+```
 
 ``` js
-invincible.invariant(false, 'something wrong') // Throw new Error('something wrong')
-invincible.invariant(true, 'something wrong')  // Noop
+import {subModule, ...others} from 'invincible'
 ```
 
 ## License
