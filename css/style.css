@@ -1624,9 +1624,33 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       padding-top: 80px;
       text-align: center; }
       .root .main .section-main .h1 {
-        margin-bottom: 50px;
+        position: relative;
+        margin: 0 auto 50px auto;
         font-size: 60px;
-        font-weight: 200; }
+        font-weight: 200;
+        display: table; }
+        .root .main .section-main .h1::after {
+          position: absolute;
+          top: 0;
+          right: auto;
+          bottom: 0;
+          left: 0;
+          content: '';
+          display: block;
+          background: #fff;
+          width: 5px;
+          transform: rotate(30deg);
+          animation: animate 4s infinite; }
+
+@keyframes animate {
+  0% {
+    left: -15px; }
+  33% {
+    left: -15px; }
+  66% {
+    left: 110%; }
+  100% {
+    left: 110%; } }
       .root .main .section-main .h2 {
         margin-top: 25px;
         font-size: 30px;
@@ -1695,6 +1719,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         border-bottom: 1px solid #dbdbdb; }
       .root .main .wrapper .wrapper-page {
         padding-top: 30px; } }
+    .root .main .container-sm {
+      max-width: 600px; }
   .root .footer {
     border-top: 1px solid #dbdbdb;
     background: #f9f9f9;
