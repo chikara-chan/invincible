@@ -11,9 +11,8 @@ language: en
 timezone: UTC
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://chikara-chan.github.io/invincible
-root: /
+root: /invincible
 
 # Directory
 source_dir: source
@@ -37,15 +36,10 @@ highlight:
   auto_detect: false
 
 # Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
 # Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
 theme: invincible
 
 # Deployment
