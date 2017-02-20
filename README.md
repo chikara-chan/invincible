@@ -42,7 +42,7 @@ Support [babel-plugin-import](https://github.com/ant-design/babel-plugin-import)
     ["import", {
       "libraryName": "invincible"
     }]
-  }
+  ]
 }
 ```
 
