@@ -17,7 +17,6 @@ function invariant(condition, message) {
   if (!condition) {
     error = new Error(message)
     error.name = 'Invariant Violation'
-    throw error
   }
 }
 

@@ -26,7 +26,7 @@ Boolean | Wether the value is a plain object
 ## Examples
 
 ``` js
-invincible.isPlainObject({key: 'value'})
-
-invincible.isPlainObject([1, 2, 3])
+invincible.isPlainObject({key: 'value'}) // true
+invincible.isPlainObject([1, 2, 3]) // false
+invincible.isPlainObject(new Test()) // false
 ```
