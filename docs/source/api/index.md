@@ -25,6 +25,26 @@ import {subModule, ...others} from 'invincible'
 import subModule from 'invincible/lib/subModule'
 ```
 
+## Third Support
+
+Support [babel-plugin-import](https://github.com/ant-design/babel-plugin-import) for loading modules on demand.
+
+``` json
+// .babelrc
+{
+  "plugins": [
+    ["import", {
+      "libraryName": "invincible",
+      "camel2DashComponentName", false
+    }]
+  ]
+}
+```
+
+``` js
+import {subModule, ...others} from 'invincible'
+```
+
 ## License
 
 Released under the [MIT](https://github.com/chikara-chan/invincible/blob/dev/LICENSE) license.
