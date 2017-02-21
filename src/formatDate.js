@@ -2,7 +2,7 @@
  * Use formatDate function to format Date object conveniently.
  */
 
-import addZeros from './helpers/addzeros'
+import addZeros from './helpers/addZeros'
 
 /**
  * @param {Number} timestamp
