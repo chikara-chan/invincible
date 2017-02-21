@@ -8,6 +8,9 @@ node_modules
 bower_components
 .DS_Store
 
+/lib
+/dist
+
 /docs/Thumbs.db
 /docs/db.json
 /docs/public
