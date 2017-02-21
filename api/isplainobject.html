@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>invariant</title>
+  <title>isplainobject</title>
   <meta name="description" content="A series of miscellaneous functional JavaScript utility library.">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -69,12 +69,12 @@
       </div>
       <div class="col-sm-9 offset-sm-1 wrapper-page">
         <h1 class="page-title">
-          invariant
+          isplainobject
         </h1>
         <article class="markdown-body">
-          <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>invariant is a function to throw error message by assertion.</p>
+          <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>isplainobject is a function to check wether a val is a plain object.</p>
 <h2 id="Syntax"><a href="#Syntax" class="headerlink" title="Syntax"></a>Syntax</h2><blockquote>
-<p>invincible.invariant(condition, message)</p>
+<p>invincible.isplainobject(val)</p>
 </blockquote>
 <h4 id="Params"><a href="#Params" class="headerlink" title="Params"></a>Params</h4><table>
 <thead>
@@ -86,19 +86,28 @@
 </thead>
 <tbody>
 <tr>
-<td>condition</td>
-<td>Boolean</td>
-<td>Assert condition</td>
-</tr>
-<tr>
-<td>message</td>
-<td>String</td>
-<td>The message to throw if condition is false</td>
+<td>val</td>
+<td>Any</td>
+<td>The source value to check</td>
 </tr>
 </tbody>
 </table>
-<h4 id="Return"><a href="#Return" class="headerlink" title="Return"></a>Return</h4><p>undefined</p>
-<h2 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">invincible.invariant(<span class="number">0</span> != <span class="number">0</span>, <span class="string">'throw this message'</span>)</div><div class="line">invincible.invariant(<span class="number">0</span> == <span class="number">0</span>, <span class="string">'not throw this message'</span>)</div></pre></td></tr></table></figure>
+<h4 id="Return"><a href="#Return" class="headerlink" title="Return"></a>Return</h4><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Boolean</td>
+<td>Wether the value is a plain object</td>
+</tr>
+</tbody>
+</table>
+<p>undefined</p>
+<h2 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">invincible.isplainobject(&#123;<span class="attr">key</span>: <span class="string">'value'</span>&#125;)</div><div class="line">invincible.isplainobject([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</div></pre></td></tr></table></figure>
 
         </article>
       </div>
