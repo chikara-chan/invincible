@@ -1,15 +1,15 @@
 ---
-title: isplainobject
+title: isPlainObject
 layout: post
 ---
 
 ## Description
 
-isplainobject is a function to check wether a val is a plain object.
+isPlainObject is a function to check wether a val is a plain object.
 
 ## Syntax
 
-> invincible.isplainobject(val)
+> invincible.isPlainObject(val)
 
 #### Params
 
@@ -23,11 +23,9 @@ Type | Description
 --- | ---
 Boolean | Wether the value is a plain object
 
-undefined
-
 ## Examples
 
 ``` js
-invincible.isplainobject({key: 'value'})
-invincible.isplainobject([1, 2, 3])
+invincible.isPlainObject({key: 'value'})
+invincible.isPlainObject([1, 2, 3])
 ```
