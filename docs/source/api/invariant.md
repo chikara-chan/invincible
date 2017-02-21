@@ -5,20 +5,20 @@ layout: post
 
 ## Description
 
-invariant is a function for throwing error message in development, but ignored in production.
+invariant is a function to throw error message by assertion.
 
 ## Syntax
 
 > invincible.invariant(condition, message)
 
-#### Arguments
+#### Params
 
 Name | Type | Description
 --- | --- | ---
 condition | Boolean | Assert condition
 message | String | The message to throw if condition is false
 
-#### Returns
+#### Return
 
 undefined
 
