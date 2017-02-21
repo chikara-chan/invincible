@@ -1,5 +1,5 @@
 const {getPrototypeOf} = Object,
-  {toString, hasOwnProperty} = Object.prototype,
+  {toString} = Object.prototype,
   {toString: funcToString} = Function.prototype,
   objectCtorString = funcToString.call(Object)
 
@@ -24,9 +24,9 @@ function isPlainObject(val) {
 
   Ctor = proto.constructor
 
-  return typeof Ctor == 'function' &&  
-  	Ctor instanceof Ctor && 
-  	funcToString.call(Ctor) === objectCtorString
+  return typeof Ctor == 'function' &&
+    Ctor instanceof Ctor &&
+    funcToString.call(Ctor) === objectCtorString
 }
 
 export default isPlainObject
