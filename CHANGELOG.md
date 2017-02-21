@@ -10,7 +10,7 @@
 
 - Fix npm package expose files error.
 
-## 1.1.0 (2017-02-21)
+## 1.1.0 (2017-02-20)
 
 #### Features
 
