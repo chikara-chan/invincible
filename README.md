@@ -29,7 +29,7 @@ import subModule from 'invincible/lib/subModule'
 
 ## API
 
-This library documents is published at [GitHub Pages](https://chikara-chan.github.io/invincible). Go to the site to see more details.
+This library documents is published at [GitHub Pages](https://invincible.playplane.com). Go to the site to see more details.
 
 ## Third Support
 

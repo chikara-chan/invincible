@@ -11,8 +11,8 @@ language: en
 timezone: UTC
 
 # URL
-url: http://chikara-chan.github.io/invincible
-root: /invincible
+url: http://invincible.playplane.com
+root: /
 
 # Directory
 source_dir: source
