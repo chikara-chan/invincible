@@ -15,3 +15,10 @@
 #### Features
 
 - Add module **isplainobject**.
+
+## 1.2.0 (2017-02-21)
+
+#### Features
+
+- Add module **parseDate**.
+- Add module **formatDate**.
