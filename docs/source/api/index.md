@@ -35,7 +35,7 @@ Support [babel-plugin-import](https://github.com/ant-design/babel-plugin-import)
   "plugins": [
     ["import", {
       "libraryName": "invincible",
-      "camel2DashComponentName", false
+      "camel2DashComponentName": false
     }]
   ]
 }
