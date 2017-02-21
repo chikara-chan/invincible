@@ -5,22 +5,17 @@
  * @param {boolean} condition
  * @param {string} message
  */
-const NODE_ENV = process.env.NODE_ENV
-let invariant = function() {}
+function invariant(condition, message) {
+  if (message === undefined) {
+    throw new Error('invariant requires an error message argument')
+  }
 
-if (NODE_ENV !== 'production') {
-  invariant = function(condition, message) {
-    if (message === undefined) {
-      throw new Error('invariant requires an error message argument')
-    }
+  let error
 
-    let error
-
-    if (!condition) {
-      error = new Error(message)
-      error.name = 'Invariant Violation'
-      throw error
-    }
+  if (!condition) {
+    error = new Error(message)
+    error.name = 'Invariant Violation'
+    throw error
   }
 }
 
