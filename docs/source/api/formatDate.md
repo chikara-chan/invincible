@@ -22,7 +22,7 @@ format | String | 'YYYY-MM-DD hh:mm:ss' | The format string
 
 Type | Description
 --- | ---
-String | The result of format
+String | Return the result of format
 
 ## Examples
 

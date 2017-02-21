@@ -16,7 +16,7 @@ invariant is a function to throw error message by assertion based on facebook fb
 Name | Type | Default | Description
 --- | --- | --- | ---
 condition | Boolean | | Assert condition
-message | String | |The message to throw if condition is false
+message | String | | The message to throw if condition is false
 
 #### Return
 

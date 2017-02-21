@@ -21,7 +21,7 @@ val | Any | | The source value to check
 
 Type | Description
 --- | ---
-Boolean | Wether the value is a plain object
+Boolean | Return wether the value is a plain object
 
 ## Examples
 

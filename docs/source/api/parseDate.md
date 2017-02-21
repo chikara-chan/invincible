@@ -21,7 +21,7 @@ dateStr | String | | The string value of date
 
 Type | Description
 --- | ---
-Number | The timestamp
+Number | Return timestamp
 
 ## Examples
 
