@@ -1,7 +1,9 @@
 /**
  * Use invariant function to assert expression assumes to be true.
  * Pay attention, The invariant message will be stripped in production.
- *
+ */
+
+/**
  * @param {boolean} condition
  * @param {string} message
  */
