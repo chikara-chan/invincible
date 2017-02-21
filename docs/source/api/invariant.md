@@ -13,10 +13,10 @@ invariant is a function to throw error message by assertion.
 
 #### Params
 
-Name | Type | Description
---- | --- | ---
-condition | Boolean | Assert condition
-message | String | The message to throw if condition is false
+Name | Type | Default | Description
+--- | --- | --- | ---
+condition | Boolean | | Assert condition
+message | String | |The message to throw if condition is false
 
 #### Return
 

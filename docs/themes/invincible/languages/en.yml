@@ -6,4 +6,5 @@ menu:
 cat:
   overview: Overview
   invariant: invariant
+  isplainobject: isplainobject
   todo: todo
