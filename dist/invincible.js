@@ -141,7 +141,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * Use invariant function to assert expression assumes to be true.
 	 * Pay attention, The invariant message will be stripped in production.
-	 *
+	 */
+
+	/**
 	 * @param {boolean} condition
 	 * @param {string} message
 	 */
@@ -177,14 +179,16 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	/**
+	 * Use isPlainObject function to check wether a value is a plain object.
+	 */
+
 	var getPrototypeOf = _getPrototypeOf2.default,
 	    toString = Object.prototype.toString,
 	    funcToString = Function.prototype.toString,
 	    objectCtorString = funcToString.call(Object);
 
 	/**
-	 * Use isPlainObject function to check wether a value is a plain object.
-	 *
 	 * @param {Any} val
 	 * @return {Boolean}
 	 */
