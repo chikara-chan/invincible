@@ -1,11 +1,13 @@
+/**
+ * Use isPlainObject function to check wether a value is a plain object.
+ */
+
 const {getPrototypeOf} = Object,
   {toString} = Object.prototype,
   {toString: funcToString} = Function.prototype,
   objectCtorString = funcToString.call(Object)
 
 /**
- * Use isPlainObject function to check wether a value is a plain object.
- *
  * @param {Any} val
  * @return {Boolean}
  */

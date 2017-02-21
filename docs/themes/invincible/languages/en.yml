@@ -6,5 +6,7 @@ menu:
 cat:
   overview: Overview
   invariant: invariant
-  isplainobject: isplainobject
+  isPlainObject: isPlainObject
+  parseDate: parseDate
+  formatDate: formatDate
   todo: todo

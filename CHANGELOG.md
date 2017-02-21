@@ -10,8 +10,15 @@
 
 - Fix npm package expose files error.
 
-## 1.1.0 (2017-02-21)
+## 1.1.0 (2017-02-20)
 
 #### Features
 
 - Add module **isplainobject**.
+
+## 1.2.0 (2017-02-21)
+
+#### Features
+
+- Add module **parseDate**.
+- Add module **formatDate**.

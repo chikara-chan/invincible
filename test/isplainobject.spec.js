@@ -1,56 +1,56 @@
 import {expect} from 'chai'
-import isplainobject from '../src/isplainobject'
+import isPlainObject from '../src/isPlainObject'
 
-describe('isplainobject', () => {
+describe('isPlainObject', () => {
   it('should return true when give emptry object', () => {
     expect(
-      isplainobject({})
+      isPlainObject({})
     ).to.be.true
   })
   it('should return true when give not emptry object', () => {
     expect(
-      isplainobject({key: 'value'})
+      isPlainObject({key: 'value'})
     ).to.be.true
   })
   it('should return true when Obejct.create', () => {
     expect(
-      isplainobject(Object.create(null))
+      isPlainObject(Object.create(null))
     ).to.be.true
   })
 
   it('should return false when give null', () => {
     expect(
-      isplainobject(null)
+      isPlainObject(null)
     ).to.be.false
   })
   it('should return false when give undefined', () => {
     expect(
-      isplainobject(undefined)
+      isPlainObject(undefined)
     ).to.be.false
   })
   it('should return false when give number', () => {
     expect(
-      isplainobject(1)
+      isPlainObject(1)
     ).to.be.false
   })
   it('should return false when give string', () => {
     expect(
-      isplainobject('string')
+      isPlainObject('string')
     ).to.be.false
   })
   it('should return false when give boolean', () => {
     expect(
-      isplainobject(true)
+      isPlainObject(true)
     ).to.be.false
   })
   it('should return false when give function', () => {
     expect(
-      isplainobject(() => {})
+      isPlainObject(() => {})
     ).to.be.false
   })
   it('should return false when give array', () => {
     expect(
-      isplainobject([])
+      isPlainObject([])
     ).to.be.false
   })
   it('should return false when give an instance', () => {
@@ -61,7 +61,7 @@ describe('isplainobject', () => {
     }
 
     expect(
-      isplainobject(new Test())
+      isPlainObject(new Test())
     ).to.be.false
   })
 })

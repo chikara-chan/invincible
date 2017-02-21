@@ -5,7 +5,7 @@ layout: post
 
 ## Description
 
-invariant is a function to throw error message by assertion.
+invariant is a function to throw error message by assertion based on facebook fbjs.
 
 ## Syntax
 
