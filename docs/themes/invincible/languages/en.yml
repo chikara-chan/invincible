@@ -9,4 +9,5 @@ cat:
   isPlainObject: isPlainObject
   parseDate: parseDate
   formatDate: formatDate
+  getURLParams: getURLParams
   todo: todo

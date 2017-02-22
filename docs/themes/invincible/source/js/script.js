@@ -1,8 +1,13 @@
-let els = document.querySelector('.sidebar').querySelectorAll('.link')
+const sidebar = document.querySelector('.sidebar')
+let els
 
-els.forEach(el => {
-  console.log(el.href)
-  if (el.href == location.href) {
-    el.style.color = '#0275d8'
-  }
-})
+if (sidebar) {
+  els =  sidebar.querySelectorAll('.link')
+  els.forEach(el => {
+    console.log(el.href)
+    if (el.href == location.href) {
+      el.style.color = '#0275d8'
+    }
+  })
+}
+

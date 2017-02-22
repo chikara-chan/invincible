@@ -11,9 +11,13 @@
 <body>
   <div class="root">
     <%- partial('_partial/header') %>
-    <main class="main"><%- body %></main>
+    <main class="main">
+      <%- body %>
+      <canvas width="0" height="0"></canvas>
+    </main>
     <%- partial('_partial/footer') %>
   </div>
   <%- js('js/script') %>
+  <%- js('js/canvas') %>
 </body>
 </html>

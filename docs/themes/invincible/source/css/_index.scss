@@ -7,28 +7,37 @@
     font-size: 60px;
     font-weight: 200;
     display: table;
-    &::after {
-      @include absolute(0 auto 0 0);
-      content: '';
-      display: block;
-      background: #fff;
-      width: 5px;
-      transform: rotate(30deg);
-      animation: animate 4s infinite;
+    animation: shake 0.2s infinite;
 
-      @keyframes animate {
-        0% {
-          left: -15px;
-        }
-        33% {
-          left: -15px;
-        }
-        66% {
-          left: 110%;
-        }
-        100% {
-          left: 110%;
-        }
+    &:hover {
+      animation: dangle 1s forwards;
+    }
+
+    @keyframes dangle {
+      0% {
+        transform-origin: 10% 50%;
+      }
+      100% {
+        transform: rotate(90deg);
+        transform-origin: 10% 50%;
+      }
+    }
+
+    @keyframes shake {
+      0% {
+        transform: rotate(1deg) translate(-1px);
+      }
+      25% {
+        transform: rotate(0deg) translate(-1px, 1px);
+      }
+      50% {
+        transform: rotate(-1deg) translate(1px);
+      }
+      750% {
+        transform: rotate(0deg) translate(1px, -1px);
+      }
+      100% {
+        transform: rotate(1deg) translate(-1px);
       }
     }
   }
