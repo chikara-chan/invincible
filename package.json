@@ -25,9 +25,9 @@
     "clean:cover": "rimraf ./coverage",
     "lint": "eslint . --ext .js",
     "lint:fix": "npm run lint -- --fix",
-    "docs": "./scripts/build-docs.sh",
+    "docs": "./scripts/serve-docs.sh",
+    "docs:build": "./scripts/build-docs.sh",
     "docs:watch": "./scripts/build-docs.sh --watch",
-    "docs:serve": "./scripts/serve-docs.sh",
     "docs:deploy": "./scripts/deploy-docs.sh",
     "prepublish": "npm run clean && npm run build && npm run lint && npm run test"
   },
