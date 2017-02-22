@@ -22,3 +22,9 @@
 
 - Add module **parseDate**.
 - Add module **formatDate**.
+
+## 1.3.0 (2017-02-22)
+
+#### Features
+
+- Add module **getURLParams**.
