@@ -1618,6 +1618,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             .root .header .item-group .item.github {
               display: none; } }
   .root .main {
+    position: relative;
     min-height: calc(100vh - 120px);
     padding: 40px 0; }
     .root .main .section-main {
@@ -1628,29 +1629,29 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         margin: 0 auto 50px auto;
         font-size: 60px;
         font-weight: 200;
-        display: table; }
-        .root .main .section-main .h1::after {
-          position: absolute;
-          top: 0;
-          right: auto;
-          bottom: 0;
-          left: 0;
-          content: '';
-          display: block;
-          background: #fff;
-          width: 5px;
-          transform: rotate(30deg);
-          animation: animate 4s infinite; }
+        display: table;
+        animation: shake 0.2s infinite; }
+        .root .main .section-main .h1:hover {
+          animation: dangle 1s forwards; }
 
-@keyframes animate {
+@keyframes dangle {
   0% {
-    left: -15px; }
-  33% {
-    left: -15px; }
-  66% {
-    left: 110%; }
+    transform-origin: 10% 50%; }
   100% {
-    left: 110%; } }
+    transform: rotate(90deg);
+    transform-origin: 10% 50%; } }
+
+@keyframes shake {
+  0% {
+    transform: rotate(1deg) translate(-1px); }
+  25% {
+    transform: rotate(0deg) translate(-1px, 1px); }
+  50% {
+    transform: rotate(-1deg) translate(1px); }
+  750% {
+    transform: rotate(0deg) translate(1px, -1px); }
+  100% {
+    transform: rotate(1deg) translate(-1px); } }
       .root .main .section-main .h2 {
         margin-top: 25px;
         font-size: 30px;
@@ -1733,3 +1734,11 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       width: 20px;
       height: 20px;
       margin-left: 10px; }
+
+canvas {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  z-index: -1; }
