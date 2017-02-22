@@ -1,6 +1,6 @@
 const canvas = document.querySelector('canvas'),
   ctx = canvas.getContext('2d')
-let timer, totalBall,
+let timer, totalBall, mouseX, mouseY,
   balls = []
 
 class Ball {
@@ -60,6 +60,7 @@ function draw() {
     ball.draw()
   })
   linkBalls()
+  linkMouse()
 }
 
 function linkBalls() {
@@ -79,6 +80,36 @@ function linkBalls() {
   }
 }
 
+function linkMouse() {
+  if (!mouseX || !mouseY) {
+    return
+  }
+  for (let i = 0; i < balls.length; i++) {
+    const distance = Math.sqrt((balls[i].x - mouseX) ** 2 + (balls[i].y - mouseY) ** 2)
+
+    if (distance < 300) {
+      ctx.strokeStyle = `rgba(230, 230, 230, ${50 / distance})`
+      ctx.lineWidth = 1
+      ctx.beginPath()
+      ctx.moveTo(balls[i].x, balls[i].y)
+      ctx.lineTo(mouseX, mouseY)
+      ctx.stroke()
+    }
+  }
+}
+
+function mousemove(e) {
+  let {target} = e
+
+  mouseX = e.offsetX
+  mouseY = e.offsetY
+  while (target.className !== 'main') {
+    mouseX += target.offsetLeft
+    mouseY += target.offsetTop
+    target = target.offsetParent
+  }
+}
+
 function detectCollide() {
   balls.forEach(ball => {
     if (ball.x - ball.r < 0 || ball.x + ball.r > canvas.width) {
@@ -92,6 +123,7 @@ function detectCollide() {
 
 function bindEvents() {
   window.addEventListener('resize', initCanvas)
+  document.querySelector('.main').addEventListener('mousemove', mousemove)
 }
 
 init()
