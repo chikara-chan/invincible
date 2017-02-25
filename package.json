@@ -29,7 +29,7 @@
     "docs:build": "./scripts/build-docs.sh",
     "docs:watch": "./scripts/build-docs.sh --watch",
     "docs:deploy": "./scripts/deploy-docs.sh",
-    "prepublish": "npm run clean && npm run build && npm run lint && npm run test"
+    "prepublishOnly": "npm run clean && npm run build && npm run lint && npm run test"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
