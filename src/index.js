@@ -1,7 +1,7 @@
 import invariant from './invariant'
 import isplainobject from './isplainobject'
 
-export {
+export default {
   invariant,
   isplainobject
 }
