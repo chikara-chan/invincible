@@ -1,7 +1,7 @@
 import invariant from './invariant'
-import isplainobject from './isplainobject'
+import isPlainObject from './isPlainObject'
 
 export default {
   invariant,
-  isplainobject
+  isPlainObject
 }
