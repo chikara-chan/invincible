@@ -13,9 +13,9 @@ isPlainObject is a function to check wether a val is a plain object.
 
 #### Params
 
-Name | Type | Default | Description
+Name | Type | Required | Default | Description
 --- | --- | --- | ---
-val | Any | | The source value to check
+val | Any | true | | The source value to check
 
 #### Return
 

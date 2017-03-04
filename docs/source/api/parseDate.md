@@ -13,9 +13,9 @@ parseDate is a function to parse Date object conveniently and compatible width o
 
 #### Params
 
-Name | Type | Default | Description
---- | --- | --- | ---
-dateStr | String | | The string value of date
+Name | Type | Required | Default | Description
+--- | --- | --- | --- | ---
+dateStr | String | true | | The string value of date
 
 #### Return
 
