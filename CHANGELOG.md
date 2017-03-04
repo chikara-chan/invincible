@@ -28,3 +28,9 @@
 #### Features
 
 - Add module **getURLParams**.
+
+## 2.0.0 (2017-03-04)
+
+#### Features
+
+- Refactor and rename module **invariant** to **assert**.
