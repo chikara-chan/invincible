@@ -5,9 +5,10 @@ menu:
 
 cat:
   overview: Overview
-  invariant: invariant
+  assert: assert
   isPlainObject: isPlainObject
   parseDate: parseDate
   formatDate: formatDate
   getURLParams: getURLParams
+  accessCookie: accessCookie
   todo: todo

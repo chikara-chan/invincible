@@ -13,10 +13,10 @@ formatDate is a function to format Date from timestamp to date string.
 
 #### Params
 
-Name | Type | Default | Description
---- | --- | --- | ---
-timestamp | Number | | A number of timestamp
-format | String | 'YYYY-MM-DD hh:mm:ss' | The format string
+Name | Type | Required | Default | Description
+--- | --- | --- | --- | ---
+timestamp | Number | true | | A number of timestamp
+format | String |  | 'YYYY-MM-DD hh:mm:ss' | The format string
 
 #### Return
 
