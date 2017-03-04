@@ -1,23 +1,23 @@
 import {expect} from 'chai'
-import invariant from '../src/invariant'
+import assert from '../src/assert'
 
-describe('invariant', () => {
+describe('assert', () => {
   it('should throw when `message` argument is undefined', () => {
     expect(() => {
-      invariant(false)
+      assert(false)
     }).to.throw(Error)
     expect(() => {
-      invariant(true)
+      assert(true)
     }).to.throw(Error)
   })
   it('should throw when `condition` argument is false', () => {
     expect(() => {
-      invariant(false, 'something wrong')
+      assert(false, 'something wrong')
     }).to.throw(Error)
   })
   it('should not throw when `condition` argument is true', () => {
     expect(() => {
-      invariant(true, 'something wrong')
+      assert(true, 'something wrong')
     }).to.not.throw(Error)
   })
 })

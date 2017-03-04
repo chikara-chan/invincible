@@ -9,7 +9,9 @@ describe('isPlainObject', () => {
   })
   it('should return true when give not emptry object', () => {
     expect(
-      isPlainObject({key: 'value'})
+      isPlainObject({
+        key: 'value'
+      })
     ).to.be.true
   })
   it('should return true when Obejct.create', () => {
