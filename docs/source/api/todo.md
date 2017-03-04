@@ -3,8 +3,8 @@ title: todo
 layout: post
 ---
 
-Comming soon.
-Welcome Pull Request.
+PR Welcome.
 All in thanks.
 Let's build a better world.
 You and me.
+👊👊🏻👊🏼👊🏽👊🏾👊🏿
