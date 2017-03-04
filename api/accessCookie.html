@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>parseDate</title>
+  <title>accessCookie</title>
   <meta name="description" content="A series of miscellaneous functional JavaScript utility library.">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -95,12 +95,12 @@
       </div>
       <div class="col-sm-9 offset-sm-1 wrapper-page">
         <h1 class="page-title">
-          parseDate
+          accessCookie
         </h1>
         <article class="markdown-body">
-          <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>parseDate is a function to parse Date object conveniently and compatible width old browser.</p>
+          <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>accessCookie is a function to get, set and remove cookie.</p>
 <h2 id="Syntax"><a href="#Syntax" class="headerlink" title="Syntax"></a>Syntax</h2><blockquote>
-<p>invincible.parseDate(dateStr)</p>
+<p>invincible.accessCookie(key, val, opts)</p>
 </blockquote>
 <h4 id="Params"><a href="#Params" class="headerlink" title="Params"></a>Params</h4><table>
 <thead>
@@ -114,11 +114,67 @@
 </thead>
 <tbody>
 <tr>
-<td>dateStr</td>
+<td>key</td>
 <td>String</td>
 <td>true</td>
 <td></td>
-<td>The string value of date</td>
+<td>The name of cookie</td>
+</tr>
+<tr>
+<td>val</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td>The value of cookie</td>
+</tr>
+<tr>
+<td>opts</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td>The extra options of cookie</td>
+</tr>
+</tbody>
+</table>
+<p><code>opts</code></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expires</td>
+<td>String</td>
+<td></td>
+<td>365</td>
+<td>A string representing the expires days of the cookie.</td>
+</tr>
+<tr>
+<td>path</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td>A string representing the path of the cookie.</td>
+</tr>
+<tr>
+<td>domain</td>
+<td>Object</td>
+<td></td>
+<td></td>
+<td>A string representing the domain the cookie belongs to.</td>
+</tr>
+<tr>
+<td>secure</td>
+<td>Boolean</td>
+<td></td>
+<td></td>
+<td>A boolean, true if the cookie is marked as secure, or false otherwise.</td>
 </tr>
 </tbody>
 </table>
@@ -131,12 +187,12 @@
 </thead>
 <tbody>
 <tr>
-<td>Number</td>
-<td>Return timestamp</td>
+<td>String</td>
+<td>Return value of cookie</td>
 </tr>
 </tbody>
 </table>
-<h2 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">invincible.parseDate(<span class="string">'2017-01-01 08:10:30'</span>) <span class="comment">// 1483229430000</span></div><div class="line">invincible.parseDate(<span class="string">'2017-01-01'</span>) <span class="comment">// 1483200000000</span></div></pre></td></tr></table></figure>
+<h2 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">invincible.accessCookie(<span class="string">'username'</span>, <span class="string">'James'</span>) <span class="comment">// set 'James'</span></div><div class="line">invincible.accessCookie(<span class="string">'username'</span>) <span class="comment">// get 'James'</span></div><div class="line">invincible.accessCookie(<span class="string">'username'</span>, <span class="literal">null</span>) <span class="comment">// delete 'James'</span></div></pre></td></tr></table></figure>
 
         </article>
       </div>

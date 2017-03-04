@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>invariant</title>
+  <title>assert</title>
   <meta name="description" content="A series of miscellaneous functional JavaScript utility library.">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -55,8 +55,8 @@
       </a>
     </li>
     <li class="item">
-      <a class="link" href="/api/invariant.html">
-        invariant
+      <a class="link" href="/api/assert.html">
+        assert
       </a>
     </li>
     <li class="item">
@@ -80,6 +80,11 @@
       </a>
     </li>
     <li class="item">
+      <a class="link" href="/api/accessCookie.html">
+        accessCookie
+      </a>
+    </li>
+    <li class="item">
       <a class="link" href="/api/todo.html">
         todo
       </a>
@@ -90,18 +95,19 @@
       </div>
       <div class="col-sm-9 offset-sm-1 wrapper-page">
         <h1 class="page-title">
-          invariant
+          assert
         </h1>
         <article class="markdown-body">
-          <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>invariant is a function to throw error message by assertion based on facebook fbjs.</p>
+          <h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>assert is a function to throw error message by assertion based on facebook fbjs.</p>
 <h2 id="Syntax"><a href="#Syntax" class="headerlink" title="Syntax"></a>Syntax</h2><blockquote>
-<p>invincible.invariant(condition, message)</p>
+<p>invincible.assert(condition, message)</p>
 </blockquote>
 <h4 id="Params"><a href="#Params" class="headerlink" title="Params"></a>Params</h4><table>
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
+<th>Required</th>
 <th>Default</th>
 <th>Description</th>
 </tr>
@@ -110,19 +116,21 @@
 <tr>
 <td>condition</td>
 <td>Boolean</td>
+<td>true</td>
 <td></td>
 <td>Assert condition</td>
 </tr>
 <tr>
 <td>message</td>
 <td>String</td>
+<td>true</td>
 <td></td>
 <td>The message to throw if condition is false</td>
 </tr>
 </tbody>
 </table>
 <h4 id="Return"><a href="#Return" class="headerlink" title="Return"></a>Return</h4><p>undefined</p>
-<h2 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">invincible.invariant(<span class="number">0</span> != <span class="number">0</span>, <span class="string">'throw this message'</span>)</div><div class="line">invincible.invariant(<span class="number">0</span> == <span class="number">0</span>, <span class="string">'not throw this message'</span>)</div></pre></td></tr></table></figure>
+<h2 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">invincible.assert(<span class="number">0</span> != <span class="number">0</span>, <span class="string">'throw this message'</span>)</div><div class="line">invincible.assert(<span class="number">0</span> == <span class="number">0</span>, <span class="string">'not throw this message'</span>)</div></pre></td></tr></table></figure>
 
         </article>
       </div>
@@ -136,7 +144,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        Copyright &copy; 2017 Chikara Chan
+        Copyright &copy; 2017 playplane.com
       </div>
       <div class="col-md-6 col-right">
         Released under the MIT license
