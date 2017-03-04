@@ -3,8 +3,8 @@
  */
 
 /**
- * @param {boolean} condition
- * @param {string} message
+ * @param {Boolean} condition
+ * @param {String} message
  */
 function assert(condition, message) {
   if (message === undefined) {
