@@ -1,7 +1,7 @@
-import invariant from './invariant'
+import assert from './assert'
 import isPlainObject from './isPlainObject'
 
 export default {
-  invariant,
+  assert,
   isPlainObject
 }
