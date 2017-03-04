@@ -11,7 +11,7 @@ function getCookie(key) {
     snippets = val.split(`; ${key}=`)
 
   if (snippets.length === 2) {
-    return snippets.pop().split(';').shift()
+    return unescape(snippets.pop().split(';').shift())
   }
 }
 
@@ -26,29 +26,33 @@ function setCookie(key, val, opts = {}) {
 
   document.cookie = [
     `${key}=${escape(val)}`,
-    opts.expires ? `; expires=${opts.expires.toGMTString()}` : '',
+    `; expires=${expires.toGMTString()}`,
     opts.path ? `; path=${opts.path}` : '',
     opts.domain ? `; domain=${opts.domain}` : '',
     opts.secure ? '; secure' : ''
-  ]
+  ].join('')
 }
 
 function removeCookie(key) {
   setCookie(key, '', {
-    expires: -1
+    expires: 0
   })
 }
 
 /**
- * @param {boolean} condition
- * @param {string} message
+ * @param {String} key
+ * @param {String} val
+ * @param {Object} val
  */
 function accessCookie(key, val, opts) {
   if (val === undefined) {
     return getCookie(key)
   }
+
   if (!val) {
     removeCookie(key)
+
+    return
   }
   setCookie(key, val, opts)
 }
