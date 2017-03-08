@@ -15,7 +15,7 @@ function assert(condition, message) {
 
   if (!condition) {
     error = new Error(message)
-    error.name = 'Assertion'
+    error.name = 'AssertionError'
     throw error
   }
 }
