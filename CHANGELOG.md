@@ -43,6 +43,6 @@
 
 ## 2.1.1 (2017-03-08)
 
-#### Refactor
+#### Refactors
 
 - Rename throw error name at module **assert**.
