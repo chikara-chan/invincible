@@ -40,3 +40,9 @@
 #### Features
 
 - Add module **accessCookie**.
+
+## 2.1.1 (2017-03-08)
+
+#### Refactor
+
+- Rename throw error name at module **assert**.
