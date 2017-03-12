@@ -51,6 +51,9 @@ Support [babel-plugin-import](https://github.com/ant-design/babel-plugin-import)
 import {subModule, ...others} from 'invincible'
 ```
 
+## Links
+[http://invincible.playplane.com/](http://invincible.playplane.com/)
+
 ## License
 
 Released under the [MIT](https://github.com/chikara-chan/invincible/blob/master/LICENSE) license.
