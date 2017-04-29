@@ -104,6 +104,8 @@
 <h2 id="Third-Support"><a href="#Third-Support" class="headerlink" title="Third Support"></a>Third Support</h2><p>Support <a href="https://github.com/ant-design/babel-plugin-import" target="_blank" rel="external">babel-plugin-import</a> for loading modules on demand.</p>
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">// .babelrc</div><div class="line">&#123;</div><div class="line">  "plugins": [</div><div class="line">    ["import", &#123;</div><div class="line">      "libraryName": "invincible",</div><div class="line">      "camel2DashComponentName": false</div><div class="line">    &#125;]</div><div class="line">  ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">import</span> &#123;subModule, ...others&#125; <span class="keyword">from</span> <span class="string">'invincible'</span></div></pre></td></tr></table></figure>
+<p>Alternatively, using webpack 2 feature <a href="https://webpack.js.org/guides/tree-shaking/" target="_blank" rel="external">tree-shaking</a>.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">import</span> &#123;subModule, ...others&#125; <span class="keyword">from</span> <span class="string">'invincible'</span></div></pre></td></tr></table></figure>
 <h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>Released under the <a href="https://github.com/chikara-chan/invincible/blob/dev/LICENSE" target="_blank" rel="external">MIT</a> license.</p>
 
         </article>
