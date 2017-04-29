@@ -33,7 +33,7 @@ This library documents is published at [GitHub Pages](https://chikara-chan.githu
 
 ## Third Support
 
-Support [babel-plugin-import](https://github.com/ant-design/babel-plugin-import) for loading modules on demand.
+Supports [babel-plugin-import](https://github.com/ant-design/babel-plugin-import) for loading modules on demand.
 
 ``` json
 // .babelrc
@@ -46,6 +46,12 @@ Support [babel-plugin-import](https://github.com/ant-design/babel-plugin-import)
   ]
 }
 ```
+
+``` js
+import {subModule, ...others} from 'invincible'
+```
+
+Alternatively, using webpack 2 feature [tree-shaking](https://webpack.js.org/guides/tree-shaking/).
 
 ``` js
 import {subModule, ...others} from 'invincible'
