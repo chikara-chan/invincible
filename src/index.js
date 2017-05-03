@@ -5,7 +5,7 @@ import formatDate from './formatDate'
 import getURLParams from './getURLParams'
 import accessCookie from './accessCookie'
 
-export default {
+export {
   assert,
   isPlainObject,
   parseDate,
