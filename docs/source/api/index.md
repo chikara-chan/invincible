@@ -45,6 +45,12 @@ Support [babel-plugin-import](https://github.com/ant-design/babel-plugin-import)
 import {subModule, ...others} from 'invincible'
 ```
 
+Alternatively, using webpack 2 feature [tree-shaking](https://webpack.js.org/guides/tree-shaking/).
+
+``` js
+import {subModule, ...others} from 'invincible'
+```
+
 ## License
 
 Released under the [MIT](https://github.com/chikara-chan/invincible/blob/dev/LICENSE) license.

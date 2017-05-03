@@ -46,3 +46,9 @@
 #### Refactors
 
 - Rename throw error name at module **assert**.
+
+## 2.2.0 (2017-04-27)
+
+#### Features
+
+- Add webpack2 tree-shaking support.
