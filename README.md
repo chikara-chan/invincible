@@ -18,7 +18,7 @@ $ yarn add invincible
 ## Usage
 
 ``` js
-var invincible = require('invincible')
+const invincible = require('invincible')
 // Or
 import invincible from 'invincible'
 // Or
